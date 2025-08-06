@@ -5,10 +5,10 @@ import GridButton from "@/components/grid-button";
 
 export default function Line6Grid() {
   const { open } = useSidebar();
-  const sizeval = open ? "size-44" : "size-52";
+  const sizeval = open ? "size-64" : "size-75";
 
   return (
-    <div className="grid grid-cols-6 gap-2 justify-center pl-3">
+    <div className="sticky grid grid-cols-6 gap-2 justify-center pl-3">
       <GridButton
         link="https://drive.google.com/file/d/1MEXOyYaJLa9PBQBjav8orODPRBi7z0zg/view?usp=sharing"
         img="/line/1.png"

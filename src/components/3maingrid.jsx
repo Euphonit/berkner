@@ -5,18 +5,19 @@ import GridButton from "@/components/grid-button";
 
 export default function Main3Grid() {
   const { open } = useSidebar();
-  const sizeval = open ? "size-36" : "size-44";
+  const sizeval = open ? "size-50" : "size-58";
   const pxval = open ? "px-4" : "px-5";
   const pyval = open ? "py-1.5" : "py-8";
+  const rval = open ? "right-240" : "right-274";
 
   return (
-    <div className={`absolute top-26 left-1 max-h-screen ${pxval} ${pyval}`}>
+    <div className={`absolute top-39 ${rval} max-h-screen ${pxval} ${pyval}`}>
       <div className="grid grid-cols-3 gap-2">
         <GridButton
           link="https://myapps.classlink.com/home"
           img="/logos/classlink.png"
-          w={120}
-          h={120}
+          w={256}
+          h={256}
           alt="classlink"
           size={sizeval}
         />
